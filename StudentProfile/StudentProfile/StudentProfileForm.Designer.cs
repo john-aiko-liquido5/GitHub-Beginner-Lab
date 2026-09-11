@@ -28,19 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            txtEmail = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // Form1
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(54, 143);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(153, 23);
+            txtEmail.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(10, 151);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Email";
+            // 
+            // StudentProfileForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(513, 305);
-            Name = "Form1";
-            Text = "Form1";
+            ClientSize = new Size(748, 443);
+            Controls.Add(label1);
+            Controls.Add(txtEmail);
+            Name = "StudentProfileForm";
+            Text = "StudentForm";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtEmail;
+        private Label label1;
     }
 }
