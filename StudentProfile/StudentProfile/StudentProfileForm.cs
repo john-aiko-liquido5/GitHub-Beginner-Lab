@@ -9,7 +9,7 @@ namespace StudentProfile
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Student Profile - Github Exercise");
+            MessageBox.Show("Student Profile - John Aiko \n Contact Number: 09457389543");
         }
     }
 }
